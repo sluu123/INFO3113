@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notification Lab</title>
+
+	<script src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+	
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    function onDeviceReady() 
+	{
+       
+    }
+
+    function onClickConfirm(buttonIndex) 
+	{
+        alert('You selected button ' + buttonIndex);
+    }
+
+    function Confirmation() {
+        navigator.notification.confirm(
+            'You are the winner!', 
+             onClickConfirm,           
+            'Game Over',          
+            ['Restart','Exit']         
+        );
+    }
+
+    </script>
+  </head>
+  <body>
+    <p><a href="#" onclick="Confirmation(); return false;">Show Confirm</a></p>
+  </body>
+</html>

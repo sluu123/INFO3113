@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IT Dating Site</title>
+	
+<link rel="stylesheet" href="themes/myTheme.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body>
+	<div data-role="page" id="page1" data-theme="d">
+		<div data-role="header">
+			<h1>IT Dating Site</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-icon="home">Home</a></li>
+					<li><a href="#page2" data-icon="user">Create Account</a></li>
+					<li><a href="#page3" data-icon="comment">Contact Us</a></li>
+					<li><a href="#page4" data-icon="heart">Rate Us</a></li>
+				</ul>			
+			</div>		
+		</div>
+		<div data-role="main" class="ui-content">
+		<h1>Browse Local Singles</h1>
+		<form>
+			<label for="essay">I'm a</label>
+			<select>
+				<option value="man">Man</option>
+				<option value="woman">Woman</option>
+			</select>
+			<label for="essay">Seeking a</label>
+			<select>
+				<option value="woman">Woman</option>
+				<option value="man">Man</option>
+			</select>
+			<label for="essay">Between</label>
+			<select>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+				<option value="32">32</option>
+				<option value="33">33</option>
+				<option value="34">34</option>
+				<option value="35">35</option>
+				<option value="36">36</option>
+				<option value="37">37</option>
+				<option value="38">38</option>
+				<option value="39">39</option>
+				<option value="40">40</option>
+				<option value="41">41</option>
+				<option value="42">42</option>
+				<option value="43">43</option>
+				<option value="44">44</option>
+				<option value="45">45</option>
+				<option value="46">46</option>
+				<option value="47">47</option>
+				<option value="48">48</option>
+				<option value="49">49</option>
+				<option value="50">50</option>			
+			</select>
+			<label for="essay">&</label>
+			<select>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+				<option value="32">32</option>
+				<option value="33">33</option>
+				<option value="34">34</option>
+				<option value="35">35</option>
+				<option value="36">36</option>
+				<option value="37">37</option>
+				<option value="38">38</option>
+				<option value="39">39</option>
+				<option value="40">40</option>
+				<option value="41">41</option>
+				<option value="42">42</option>
+				<option value="43">43</option>
+				<option value="44">44</option>
+				<option value="45">45</option>
+				<option value="46">46</option>
+				<option value="47">47</option>
+				<option value="48">48</option>
+				<option value="49">49</option>
+				<option value="50">50</option>			
+			</select>
+			<label for="essay">Near postal code</label>
+			<input type="text" name="nearPostalCode" placeholder="Postal code">
+		</form>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Symon Luu 2015</h2>
+		</div>
+	</div>
+	
+	<div data-role="page" id="page2" data-theme="d">
+		<div data-role="header">
+			<h1>IT Dating Site</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-icon="home">Home</a></li>
+					<li><a href="#page2" data-icon="user">Create Account</a></li>
+					<li><a href="#page3" data-icon="comment">Contact Us</a></li>
+					<li><a href="#page4" data-icon="heart">Rate Us</a></li>
+				</ul>			
+			</div>					
+		</div>
+	<div data-role"main" class="ui-content">
+		<h1>Create Account</h1>
+		<form>
+			<label for="essay">First name</label>
+			<input type="text" name="firstName" placeholder="First name">
+			<label for="essay">Surname</label>
+			<input type="text" name="surName" placeholder="Surname">
+			<label for="essay">Username</label>
+			<input type="text" name="userName" placeholder="User name">
+			<label for="essay">Password</label>
+			<input type="password" name="password" placeholder="Password">
+			<label for="essay">Re-enter password</label>
+			<input type="password" name="rePassword" placeholder="Re-enter password">
+			<label for="essay">Country/region</label>
+			<select>
+				<option value="Canada">Canada</option>
+				<option value="Canada">United States</option>
+			</select>
+			<label for="essay">City</label>
+			<input type="text" name="city" placeholder="City">
+			<label for="essay">Province/state</label>
+			<input type="text" name="ps" placeholder="Province/state">
+			<label for="essay">Postal code</label>
+			<input type="text" name="postalCode" placeholder="Postal code">
+			<label for="essay">Date of birth</label>
+			<select>
+				<option value="Day">Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			<select>
+				<option value="month">Month</option>
+				<option value="jan">January</option>
+				<option value="feb">February</option>
+				<option value="mar">March</option>
+				<option value="apr">April</option>
+				<option value="may">May</option>
+				<option value="jun">June</option>
+				<option value="jul">July</option>
+				<option value="aug">August</option>
+				<option value="sep">September</option>
+				<option value="oct">October</option>
+				<option value="nov">November</option>
+				<option value="dec">December</option>				
+			</select>
+			<select>
+				<option value="">Year</option>
+				<option value="">2015</option>
+				<option value="">2014</option>
+				<option value="">2013</option>
+				<option value="">2012</option>
+				<option value="">2011</option>
+				<option value="">2010</option>
+				<option value="">2009</option>
+				<option value="">2008</option>
+				<option value="">2007</option>
+				<option value="">2006</option>
+				<option value="">2005</option>
+				<option value="">2004</option>
+				<option value="">2003</option>
+				<option value="">2002</option>
+				<option value="">2001</option>
+				<option value="">2000</option>
+				<option value="">1999</option>
+				<option value="">1998</option>
+				<option value="">1997</option>
+				<option value="">1996</option>
+				<option value="">1995</option>
+				<option value="">1994</option>
+				<option value="">1993</option>
+				<option value="">1992</option>
+			</select>
+			<label for="essay">Gender</label>
+			<select>
+				<option value="">Select...</option>
+				<option value="">Male</option>
+				<option value="">Female</option>			
+			</select>
+			<label for="essay">Phone number</label>
+			<input type="text" name="phoneNumber" placeholder="Phone number">
+			</br>
+			</br>
+			<input type="submit" name ="go" id="go" value="Submit"/>
+		</form>	
+	
+	</div>
+	<div data-role="footer">
+			<h2>&copy; Symon Luu 2015</h2>
+	</div>
+	</div>	
+	
+	<div data-role="page" id="page3" data-theme="d">
+		<div data-role="header">
+			<h1>IT Dating Site</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-icon="home">Home</a></li>
+					<li><a href="#page2" data-icon="user">Create Account</a></li>
+					<li><a href="#page3" data-icon="comment">Contact Us</a></li>
+					<li><a href="#page4" data-icon="heart">Rate Us</a></li>
+				</ul>					
+			</div>	
+		</div>
+		<div data-role="main" class="ui-content">
+			<div data-role="collapsible">
+				<h1>Call Us</h1>
+				<p>We can quickly provude you with the help you need. We're only a phone call away.</p>
+				<p><b>Toll Free</b></br>1-888-123-4567</p>
+				<p><b>Local</b></br>1-519-123-4567</p>
+				<p>We will answer during phoning hours, 6 AM - 11 PM EST.</br>7 days a week.</p>
+			</div>
+			<div data-role="collapsible">
+				<h1>Find Us</h1>
+					<script>
+						function initialize() 
+						{
+							var mapProp = {
+							center:new google.maps.LatLng(51.508742,-0.120850),
+							zoom:5,
+							mapTypeId:google.maps.MapTypeId.ROADMAP
+						};
+						var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+					}
+					google.maps.event.addDomListener(window, 'load', initialize);
+					</script>
+					<body>
+					<div id="googleMap" style="width:500px;height:380px;"></div>
+					</body>					
+			</div>
+			<div data-role="collapsible">
+				<h1>Email Us</h1>
+				<p>Have a general question?</br>Email us at <a href="ITDatingSite@ITDatingSite.ca">ITDatingSite@ITDatingSite.ca</a></p>
+				<p>We will answer during emailing hours, 6 AM - 11 PM EST.</br>7 days a week.</p>
+			</div>
+		</div>		
+		<div data-role="footer">
+			<h2>&copy; Symon Luu 2015</h2>
+		</div>
+	</div>	
+	
+	<div data-role="page" id="page4" data-theme="d">
+		<div data-role="header">
+			<h1>IT Dating Site</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-icon="home">Home</a></li>
+					<li><a href="#page2" data-icon="user">Create Account</a></li>
+					<li><a href="#page3" data-icon="comment">Contact Us</a></li>
+					<li><a href="#page4" data-icon="heart">Rate Us</a></li>
+				</ul>			
+			</div>					
+		</div>
+		<div data-role="main" class="ui-content">
+			<h1>Rate Us!</h1>
+			<form>
+				<label for="essay">Tell us what you think<label>
+				<textarea name="essay" id="essay" placeholder="Tell us how great we are!"></textarea>
+				<label for="essay">Rate us out of 10<label>
+				<input type="range" name ="rate" id="rate" min="0" max="10" />		
+				<input type="submit" name ="go" id="go" value="Rate my app!"/>
+			</form>		
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Symon Luu 2015</h2>
+		</div>
+	</div>
+</body>
+</html>
